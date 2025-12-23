@@ -30,4 +30,6 @@ app.UseAuthorization();
 
 app.MapRazorPages();
 
+app.MapGet("/ping", () => "pong");
+
 app.Run();
